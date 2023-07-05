@@ -35,6 +35,7 @@ $font-black: #141415;
             height: 100%;
             display: flex;
             align-items: flex-end;
+            justify-content: center;
             z-index: 1;
             img {
                 width: 100%;
@@ -161,7 +162,7 @@ $font-black: #141415;
 @media ( max-width: 940px ){
     #wrap .container {
         width: 100%;
-        padding: 80px 16px 0;
+        padding: 50px 16px 0;
     }
 }
 @media ( max-width: 767px ){
@@ -169,8 +170,8 @@ $font-black: #141415;
 }
 @media ( max-width: 480px ){
     #wrap header span {
-        font-size: 24px;
-        padding: 8px 30px 13px;
+        font-size: 14px;
+        padding: 4px 20px 8px;
     }
     #wrap .container .main-logo {
         width: 170px;
@@ -184,5 +185,8 @@ $font-black: #141415;
     #wrap .container .location span {
         font-size: 14px;
         padding: 8px 24px;
+    }
+    #wrap .bg-area .bg-round img {
+        width: 300%;
     }
 }
