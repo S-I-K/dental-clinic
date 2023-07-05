@@ -43,7 +43,10 @@ $font-black: #141415;
         .bg-img {
             position: absolute;
             width: 100%;
+            height: 100%;
             opacity: .4;
+            display: flex;
+            justify-content: center;
             img {
                 width: 100%;
             }
@@ -142,5 +145,44 @@ $font-black: #141415;
                 width: 100%;
             }
         }
+    }
+}
+
+
+
+/* responsive */
+@media ( max-width: 1440px ){
+    #wrap .bg-area .bg-img img {
+        width: auto;
+        height: 100%;
+    }
+}
+@media ( max-width: 1279px ){}
+@media ( max-width: 940px ){
+    #wrap .container {
+        width: 100%;
+        padding: 80px 16px 0;
+    }
+}
+@media ( max-width: 767px ){
+
+}
+@media ( max-width: 480px ){
+    #wrap header span {
+        font-size: 24px;
+        padding: 8px 30px 13px;
+    }
+    #wrap .container .main-logo {
+        width: 170px;
+    }
+    #wrap .container p.comment {
+        width: 100%;
+        padding: 0 60px;
+        text-align: center;
+        word-break: keep-all;
+    }
+    #wrap .container .location span {
+        font-size: 14px;
+        padding: 8px 24px;
     }
 }
